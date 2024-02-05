@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+     <nav>
+         <ul>
+            <li><a href="#">Coding2go</a></li>
+            <li><a href="#">katyayni</a></li>
+            <li><a href="#">loves</a></li>
+            <li><a href="#">Deepak</a></li>
+            <li><a href="#">heheh</a></li>
+            <li><a href="#">yaahuu</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+         </ul>
+         <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">katyayni</a></li>
+            <li><a href="#">loves</a></li>
+            <li><a href="#">Deepak</a></li>
+            <li><a href="#">heheh</a></li>
+            <li><a href="#">yaahuu</a></li>
+         </ul>
+     </nav>  
+    <div class="main">Welcome to our Beautiful World</div>
+     <script>
+        function showSidebar(){
+            const name=document.querySelector('.sidebar')
+            name.style.display='flex'
+        }
+        function hideSidebar() {
+            const name=document.querySelector('.sidebar')
+            name.style.display='none'
+        }
+     </script>
+</body>
+</html>
